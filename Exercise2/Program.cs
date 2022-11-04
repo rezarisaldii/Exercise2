@@ -92,6 +92,10 @@ namespace Exercise2
                 right--;
             }
         }
+        static public void SortMerge(int[] numbers, int left, int right)
+        {
+
+        }
         static void Main(string[] args)
         {
             InsertionSorting();
