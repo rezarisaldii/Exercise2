@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace Exercise2
 {
     class Program
     {
+        //Insertion Sort
         static int InsertionSorting()
         {
             Console.Write("\nProgram for sorting a numeric array using Insertion Sorting");
@@ -63,6 +65,25 @@ namespace Exercise2
                 Console.Write("\n");
             }
             return 0;
+        }
+        //Merge Sort
+        static public void MainMerge(int[] numbers, int left, int mid, int right)
+        {
+            int[] temp = new int[25];
+            int i, eol, num, pos;
+            eol = (mid - 1);
+            pos = left;
+            num = (right - left + 1);
+
+            while ((left <= eol) && (mid <= right))
+            {
+                if (numbers[left] <= numbers[mid])
+                    temp[pos++] = numbers[left++];
+                else
+                    temp[pos++] = numbers[mid++];
+            }
+
+
         }
         static void Main(string[] args)
         {
