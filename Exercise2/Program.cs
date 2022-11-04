@@ -11,9 +11,18 @@ namespace Exercise2
         static int InsertionSorting()
         {
             Console.Write("\nProgram for sorting a numeric array using Insertion Sorting");
-            Console.Write("\n\nEnter number of elements: ");
-            int max = Convert.ToInt32(Console.ReadLine());
             int[] reza = new int[27]; //maximum array
+            int n;
+            while (true)
+            {
+                Console.Write("\n\ninsert multiple elements in array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 27)
+                    break;
+                else
+                    Console.WriteLine("\nArrays can have a maximum of 27 elements.\n");
+            }
 
             for (int i = 0; i < 27; i++)
             {
