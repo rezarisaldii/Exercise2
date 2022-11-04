@@ -57,6 +57,8 @@ namespace Exercise2
         }
         static void Main(string[] args)
         {
+            InsertionSorting();
+            Console.ReadLine();
         }
     }
 }
